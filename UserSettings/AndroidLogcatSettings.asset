@@ -1,0 +1,113 @@
+{
+    "m_SelectedDeviceId": "18131FDF600024",
+    "m_SelectedPackage": {
+        "deviceId": "18131FDF600024",
+        "name": "com.DefaultCompany.hackust2022tree",
+        "processId": 23701,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.google.android.apps.nexuslauncher",
+            "processId": 2710,
+            "exited": false
+        },
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.DefaultCompany.hackust2022tree",
+            "processId": 16950,
+            "exited": true
+        },
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.DefaultCompany.hackust2022tree",
+            "processId": 18026,
+            "exited": true
+        },
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.DefaultCompany.hackust2022tree",
+            "processId": 18651,
+            "exited": true
+        },
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.DefaultCompany.hackust2022tree",
+            "processId": 21230,
+            "exited": true
+        },
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.DefaultCompany.hackust2022tree",
+            "processId": 22139,
+            "exited": true
+        },
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.DefaultCompany.hackust2022tree",
+            "processId": 23138,
+            "exited": false
+        },
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.DefaultCompany.hackust2022tree",
+            "processId": 23701,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
