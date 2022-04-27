@@ -62,3 +62,5 @@ crashlytics-build.properties
 AcademicBuilding_GF-7F-3DView-{3D}*
 Assets/Polytope Studio*
 Assets/TerrainDemoScene_URP*
+
+*.keystore

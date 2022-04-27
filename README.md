@@ -10,11 +10,17 @@ This is the repo of group VISPIE for HackUST 2022.
 
 ![We use Unity, Vuforia, and Revit for building this application.](./imgs/implementation.jpg "WorkfImplementationlow")
 
+## Extra Unity Package Used (Please also import these packages to the Unity)
+1. [Lowpoly Environment - Nature Pack Free](https://assetstore.unity.com/packages/3d/environments/lowpoly-environment-nature-pack-free-187052)
+2. [Unity Terrain - URP Demo Scene](https://assetstore.unity.com/packages/3d/environments/unity-terrain-urp-demo-scene-213197)
+
+
 ## How to run?
 
 1. Open this project using Unity
-2. Enter the license key for using Vuforia in `VuforiaConfiguration.asset`
-3. Build the application for Android in Unity
+2. Sign the application in Unity using Keystore Manager
+3. Setup Google Cloud Anchor API according to <https://developers.google.com/ar/develop/unity-arf/cloud-anchors/developer-guide-android>
+4. Open `Nav.unity` in `Assets/Scenes` and build the application for Android in Unity
 
 ### NOTE
 
