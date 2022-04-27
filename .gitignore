@@ -58,10 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-
 # Custom
 AcademicBuilding_GF-7F-3DView-{3D}*
-
-
-demo_BackUpThisFolder_ButDontShipItWithYourGame/
-demo_BurstDebugInformation_DoNotShip/
+Assets/Polytope Studio*
+Assets/TerrainDemoScene_URP*

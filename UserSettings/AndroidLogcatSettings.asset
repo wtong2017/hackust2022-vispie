@@ -2,8 +2,8 @@
     "m_SelectedDeviceId": "18131FDF600024",
     "m_SelectedPackage": {
         "deviceId": "18131FDF600024",
-        "name": "com.DefaultCompany.hackust2022tree",
-        "processId": 23701,
+        "name": "com.vispie.hackust2022tree",
+        "processId": 22187,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,49 +11,55 @@
         {
             "deviceId": "18131FDF600024",
             "name": "com.google.android.apps.nexuslauncher",
-            "processId": 2710,
+            "processId": 2592,
             "exited": false
         },
         {
             "deviceId": "18131FDF600024",
-            "name": "com.DefaultCompany.hackust2022tree",
-            "processId": 16950,
+            "name": "com.vispie.hackust2022tree",
+            "processId": 32303,
             "exited": true
         },
         {
             "deviceId": "18131FDF600024",
-            "name": "com.DefaultCompany.hackust2022tree",
-            "processId": 18026,
+            "name": "com.vispie.hackust2022tree",
+            "processId": 370,
             "exited": true
         },
         {
             "deviceId": "18131FDF600024",
-            "name": "com.DefaultCompany.hackust2022tree",
-            "processId": 18651,
+            "name": "com.vispie.hackust2022tree",
+            "processId": 1455,
             "exited": true
         },
         {
             "deviceId": "18131FDF600024",
-            "name": "com.DefaultCompany.hackust2022tree",
-            "processId": 21230,
+            "name": "com.vispie.hackust2022tree",
+            "processId": 2165,
             "exited": true
         },
         {
             "deviceId": "18131FDF600024",
-            "name": "com.DefaultCompany.hackust2022tree",
-            "processId": 22139,
+            "name": "com.vispie.hackust2022tree",
+            "processId": 9766,
             "exited": true
         },
         {
             "deviceId": "18131FDF600024",
-            "name": "com.DefaultCompany.hackust2022tree",
-            "processId": 23138,
+            "name": "com.vispie.hackust2022tree",
+            "processId": 10471,
             "exited": false
         },
         {
             "deviceId": "18131FDF600024",
-            "name": "com.DefaultCompany.hackust2022tree",
-            "processId": 23701,
+            "name": "com.vispie.hackust2022tree",
+            "processId": 18895,
+            "exited": false
+        },
+        {
+            "deviceId": "18131FDF600024",
+            "name": "com.vispie.hackust2022tree",
+            "processId": 22187,
             "exited": false
         }
     ],

@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement picking-mode="Ignore" style="width: 100%; height: 100%; align-items: center;">
+        <ui:Button display-tooltip-when-elided="false" name="PlantBtn" style="background-image: url(&apos;project://database/Assets/add%20tree.png?fileID=2800000&amp;guid=12280b157f01f6242b78ab63b95b90f5&amp;type=3#add tree&apos;); position: absolute; left: 50px; bottom: 50px; width: 200px; height: 200px; background-color: rgb(122, 204, 128); border-top-left-radius: 50%; border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; -unity-background-scale-mode: stretch-to-fill; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+        <ui:VisualElement name="VisualElement" style="position: absolute; width: 80%; height: 15%; align-items: center; top: 120px; background-color: rgb(255, 255, 255); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; flex-direction: row; justify-content: space-around; left: 112px;">
+            <ui:VisualElement>
+                <ui:Label text="Climate Points" display-tooltip-when-elided="true" style="color: rgb(160, 160, 160); font-size: 48px; -unity-text-align: upper-center; position: relative; -unity-font-style: bold; padding-bottom: 32px;" />
+                <ui:Label text="25" display-tooltip-when-elided="true" name="score" style="color: rgb(72, 164, 0); font-size: 56px; -unity-text-align: upper-center; position: relative; -unity-font-style: bold;" />
+            </ui:VisualElement>
+            <ui:VisualElement text="Climate Points" style="width: 2px; flex-grow: 0; background-color: rgb(160, 160, 160); height: 80%; justify-content: flex-start;" />
+            <ui:VisualElement>
+                <ui:Label text="Grow Trees with" display-tooltip-when-elided="true" name="messageTitle" style="color: rgb(160, 160, 160); font-size: 48px; -unity-text-align: upper-center; position: relative; -unity-font-style: bold; padding-bottom: 32px;" />
+                <ui:Label text="Green Events" display-tooltip-when-elided="true" name="messageBody" style="color: rgb(72, 164, 0); font-size: 56px; -unity-text-align: middle-center; position: relative; -unity-font-style: bold; white-space: normal;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:GroupBox name="GroupBox" style="background-color: rgba(255, 255, 255, 0.5); font-size: 24px; position: absolute; bottom: 0; right: 0; display: none;">
+            <ui:RadioButtonGroup label="Target Locations" value="0" choices="Atrium,Exit,Lift 27-28" name="selector" style="right: auto; font-size: 36px;" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:Image name="Image" style="background-image: url(&apos;project://database/Assets/Minimap.renderTexture?fileID=8400000&amp;guid=191770f20fb49504aba56896e1a89c77&amp;type=2#Minimap&apos;); position: absolute; width: 512px; height: 512px; top: auto; left: auto; bottom: 0; right: 0;" />
+</ui:UXML>

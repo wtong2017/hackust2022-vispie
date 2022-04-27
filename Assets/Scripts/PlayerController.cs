@@ -10,19 +10,22 @@ public class PlayerController : MonoBehaviour
 {
     public TreeStore treeStore; // this could be a singleton
     private ScoreController scoreController;
-    private GameObject ARCamera;
+    public GameObject ARCamera;
+    Collider[] hitColliders = new Collider[10];
+    public float searchEventRadius = 15;
 
     [Header("UI")]
-    public TextMeshProUGUI scoreDisplay;
+    public UIController uiController;
 
+    [Header("Test")]
+    [SerializeField] List<GameObject> testLocations = new List<GameObject>();
+    public bool isTest = false;
 
     // Start is called before the first frame update
     void Start() {
         scoreController = GetComponent<ScoreController>();
 
         scoreController.Initialize(15);
-
-        ARCamera = GameObject.Find("ARCamera");
     }
 
     //public void OnGUI() {
@@ -30,11 +33,29 @@ public class PlayerController : MonoBehaviour
     //}
 
     private void Update() {
-        if (ARCamera != null) {
-            transform.position = ARCamera.transform.position;
+        if (ARCamera.activeSelf) {
+            LookForGreenEvent();
         }
 
-        scoreDisplay.text = $"Green Score: {scoreController.Score}";
+        uiController.SetScore(scoreController.Score);
+
+    }
+
+    void LookForGreenEvent() {
+        int numColliders = Physics.OverlapSphereNonAlloc(transform.position, searchEventRadius, hitColliders);
+        for (int i = 0; i < numColliders; i++) {
+            EventController eventController;
+            if (hitColliders[i].gameObject.TryGetComponent(out eventController)) {
+                eventController.ActivateTarget(true);
+            }
+        }
+    }
+
+    private void OnDrawGizmos() {
+        if (ARCamera.activeSelf) {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawSphere(transform.position, searchEventRadius);
+        }
     }
 
     public bool TryPlantTree(int treeTypeIndex, Vector3 position) {
@@ -46,7 +67,11 @@ public class PlayerController : MonoBehaviour
     }
 
     public void TryPlantTreeWithAnchor(GameObject anchor) {
-        TryPlantTree(0, anchor);
+        if (isTest && testLocations.Count != 0) {
+            TryPlantTree(0, testLocations[0]);
+        } else {
+            TryPlantTree(0, anchor);
+        }
     }
 
     private bool TryPlantTree(int treeTypeIndex, GameObject anchor) {
@@ -78,6 +103,24 @@ public class PlayerController : MonoBehaviour
             else {
                 Debug.Log("onPlant failed");
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        EventController eventController;
+        if (other.gameObject.TryGetComponent(out eventController)) {
+            EventObject evtObj = eventController.GetEvent();
+            eventController.ShowMark(false);
+            uiController.SetUIMessage("Get Points with", evtObj.eventName);
+            GainPoints(evtObj.pointsGain);
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        EventController eventController;
+        if (other.gameObject.TryGetComponent(out eventController)) {
+            eventController.ShowMark(true);
+            uiController.SetUIMessage("Grow Trees with", "Green Events");
         }
     }
 }

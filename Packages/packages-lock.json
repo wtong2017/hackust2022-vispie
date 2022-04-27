@@ -1,12 +1,21 @@
 {
   "dependencies": {
-    "com.ptc.vuforia.engine": {
-      "version": "file:com.ptc.vuforia.engine-10.6.3.tgz",
+    "com.google.ar.core.arfoundation.extensions": {
+      "version": "https://github.com/google-ar/arcore-unity-extensions.git",
       "depth": 0,
-      "source": "local-tarball",
+      "source": "git",
       "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      }
+        "com.unity.xr.arfoundation": "4.1.5",
+        "com.unity.xr.arcore": "4.1.5",
+        "com.unity.xr.arkit": "4.1.5"
+      },
+      "hash": "89aebe571a18ccc244996c71997fb8a28f5832b0"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.burst": {
       "version": "1.6.5",
@@ -31,6 +40,13 @@
       "dependencies": {
         "com.unity.services.core": "1.0.1"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.editorcoroutines": {
+      "version": "1.0.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
@@ -76,7 +92,7 @@
     },
     "com.unity.inputsystem": {
       "version": "1.3.0",
-      "depth": 2,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.uielements": "1.0.0"
@@ -161,6 +177,16 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.terrain-tools": {
+      "version": "4.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.terrain": "1.0.0",
+        "com.unity.modules.terrainphysics": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.test-framework": {
       "version": "1.1.31",
       "depth": 0,
@@ -202,6 +228,25 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.unity.visualeffectgraph": {
+      "version": "12.1.6",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.shadergraph": "12.1.6",
+        "com.unity.render-pipelines.core": "12.1.6"
+      }
+    },
+    "com.unity.visualscripting": {
+      "version": "1.7.6",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.xr.arcore": {
       "version": "4.2.2",
       "depth": 0,
@@ -222,6 +267,17 @@
         "com.unity.xr.arsubsystems": "4.2.2",
         "com.unity.xr.management": "4.0.1",
         "com.unity.modules.particlesystem": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.arkit": {
+      "version": "4.2.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0",
+        "com.unity.xr.arsubsystems": "4.2.2",
+        "com.unity.xr.management": "4.0.1"
       },
       "url": "https://packages.unity.com"
     },

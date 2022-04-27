@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518f5212e8e522e47aac1b18c4041be4, type: 3}
   m_Name: GreenEvent
   m_EditorClassIdentifier: 
-  eventName: UseWaterFountain
+  eventName: Fountain
   pointsGain: 10
