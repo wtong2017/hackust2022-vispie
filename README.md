@@ -1,6 +1,6 @@
-# USTreePlantAR - VISPIE
+# VisPIE for ESG
 
-This is the repo of group VISPIE for HackUST 2022.
+This is the repo of group **VisPIE** for HackUST 2022. **Vis** stands for Data **Vis**ualization and **PIE** stands for **P**erception, **I**mmersive, and **E**mpowerment.
 
 ## What does this AR app do?
 
